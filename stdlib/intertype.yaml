@@ -1,0 +1,14 @@
+"[Params, 0] sort.Slice":
+  - check: {"IsSlice": true}
+
+"[Params, 1] encoding/json.Unmarshal":
+  - check: {"IsPointer": true}
+
+"[Params, 0] (*encoding/json.Decoder).Decode":
+  - check: {"IsPointer": true}
+
+"[Elem] text/template.FuncMap":
+  - check: {"IsFunc": true}
+
+"[Params, 0] encoding/json.Marshal":
+  - check: {"Tags": ["json"]}
